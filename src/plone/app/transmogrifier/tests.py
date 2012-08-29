@@ -38,6 +38,7 @@ def aTSchemaUpdaterSetUp(test):
         implements(IBaseObject)
 
         _last_path = None
+        type = 'fieldtype'
         def unrestrictedTraverse(self, path, default):
             if path[0] == '/':
                 return default # path is absolute

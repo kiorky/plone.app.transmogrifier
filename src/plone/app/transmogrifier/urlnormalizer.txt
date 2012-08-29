@@ -31,13 +31,13 @@ The URL normalizer accepts the following optional keys -
     ... """
     >>> registerConfig(u'plone.app.transmogrifier.tests.urlnormalizer',
     ...                urlnormalizer)
-    >>> transmogrifier(u'plone.app.transmogrifier.tests.urlnormalizer')
+    >>> transmogrifier(u'plone.app.transmogrifier.tests.urlnormalizer') # doctest: +REPORT_UDIFF 
     [('id', 'mytitle'), ('title', 'mytitle')]
     [('id', 'is-this-a-title-of-any-sort'),
      ('title', 'Is this a title of any sort?')]
     [('id', 'put-some-br-1lly-v4lues-here-there'),
      ('title', 'Put some <br /> $1llY V4LUES -- here&there')]
-    [('id', 'what-about-\r\n-line-breaks-system'),
+    [('id', 'what-about-line-breaks-system'),
      ('title', 'What about \r\n line breaks (system)')]
     [('id', 'try-one-of-these-oh'), ('title', 'Try one of these --------- oh')]
     [('language', 'My language is de')]
@@ -104,13 +104,13 @@ If ZERO options are specified, the normalizer falls back to a set of default val
     ... """
     >>> registerConfig(u'plone.app.transmogrifier.tests.urlnormalizer3',
     ...                urlnormalizer)
-    >>> transmogrifier(u'plone.app.transmogrifier.tests.urlnormalizer3')
+    >>> transmogrifier(u'plone.app.transmogrifier.tests.urlnormalizer3') # doctest: +REPORT_UDIFF
     [('_id', 'mytitle'), ('title', 'mytitle')]
     [('_id', 'is-this-a-title-of-any-sort'),
      ('title', 'Is this a title of any sort?')]
     [('_id', 'put-some-br-1lly-v4lues-here-there'),
      ('title', 'Put some <br /> $1llY V4LUES -- here&there')]
-    [('_id', 'what-about-\r\n-line-breaks-system'),
+    [('_id', 'what-about-line-breaks-system'),
      ('title', 'What about \r\n line breaks (system)')]
     [('_id', 'try-one-of-these-oh'), ('title', 'Try one of these --------- oh')]
     [('language', 'My language is de')]
