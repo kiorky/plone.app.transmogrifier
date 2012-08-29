@@ -458,29 +458,29 @@ def reindexObjectSetup(test):
 def test_suite():
     return unittest.TestSuite((
         doctest.DocFileSuite(
-            'portaltransforms.txt',
+            '../portaltransforms.txt',
             setUp=portalTransformsSetUp, tearDown=tearDown),
         doctest.DocFileSuite(
-            'atschemaupdater.txt',
+            '../atschemaupdater.txt',
             setUp=aTSchemaUpdaterSetUp, tearDown=tearDown),
         doctest.DocFileSuite(
-            'uidupdater.txt',
+            '../uidupdater.txt',
             setUp=uidSetUp, tearDown=tearDown),
         doctest.DocFileSuite(
-            'workflowupdater.txt',
+            '../workflowupdater.txt',
             setUp=workflowUpdaterSetUp, tearDown=tearDown),
         doctest.DocFileSuite(
-            'browserdefault.txt',
+            '../browserdefault.txt',
             setUp=browserDefaultSetUp, tearDown=tearDown),
         doctest.DocFileSuite(
-            'urlnormalizer.txt',
+            '../urlnormalizer.txt',
             setUp=urlNormalizerSetUp, tearDown=tearDown),
         doctest.DocFileSuite(
-            'criteria.txt', setUp=criteriaSetUp, tearDown=tearDown),
+            '../criteria.txt', setUp=criteriaSetUp, tearDown=tearDown),
         doctest.DocFileSuite(
-            'mimeencapsulator.txt',
+            '../mimeencapsulator.txt',
             setUp=mimeencapsulatorSetUp, tearDown=tearDown),
         doctest.DocFileSuite(
-            'reindexobject.txt',
+            '../reindexobject.txt',
             setUp=reindexObjectSetup, tearDown=tearDown),
     ))
